@@ -52,18 +52,9 @@ bot.on('windowOpen', async (window) => {
  //   setTimeout(() => { bot.chat('/2y2c') }, ms(`30s`))
  //   setTimeout(() => { bot.clickWindow(10, 0, 0); }, ms(`5s`))});
   //  setInterval(() => { bot.chat ('AO làng CPvP | DISCORD : https://discord.2y2cpvp.ga | Join Us Now!! | Bạn có thể thắng giải chỉ bằng kĩ năng CPVP!!!')},ms(`60s`))
- bot.once('login', async () => {
-  console.log(bot.username + ': Joined');
- await new Promise(resolve => bot.once("spawn", resolve));
-  console.log(bot.username + ': Spawned');
- bot.chat("/login Huybloxgaming123");
- console.log(bot.username + ': Logined');
-   bot.setControlState('forward', true);
-    await new Promise(resolve => bot.once("login", resolve));
-    console.log(bot.username + ': redirect successful!');
-    bot.setControlState('forward', false);
 
-// ^ Login 6b
+
+// ^ bỏ cái // ra
 const { pathfinder, Movements, goals: { GoalNear } } = require('mineflayer-pathfinder')
 const vec3 = require('vec3')
 const RANGE_GOAL = 1
