@@ -39,32 +39,31 @@ const bot = mineflayer.createBot({
 })
 bot.on('windowOpen', async (window) => {
 
-const pass = config.pin.split(' ')
+// const pass = config.pin.split(' ')
 
-const p1 = pass[0];
-const p2 = pass[1];
-const p3 = pass[2];
-const p4 = pass[3];
+// const p2 = pass[1];
+// const p3 = pass[2];
+// const p4 = pass[3];
 
-bot.simpleClick.leftMouse(Number(p1));
-bot.simpleClick.leftMouse(Number(p2));
-bot.simpleClick.leftMouse(Number(p3));
-bot.simpleClick.leftMouse(Number(p4));
-    setTimeout(() => { bot.chat('/2y2c') }, ms(`30s`))
-    setTimeout(() => { bot.clickWindow(10, 0, 0); }, ms(`5s`))});
-    setInterval(() => { bot.chat ('AO làng CPvP | DISCORD : https://discord.2y2cpvp.ga | Join Us Now!! | Bạn có thể thắng giải chỉ bằng kĩ năng CPVP!!!')},ms(`60s`))
-  // bot.once('login', async () => {
-  //  console.log(bot.username + ': Joined');
-   // await new Promise(resolve => bot.once("spawn", resolve));
-  //  console.log(bot.username + ': Spawned');
-   // bot.chat("/login Huybloxgaming123");
-   // console.log(bot.username + ': Logined');
-   //bot.setControlState('forward', true);
-  //  await new Promise(resolve => bot.once("login", resolve));
-  //  console.log(bot.username + ': redirect successful!');
-   // bot.setControlState('forward', false);
+//bot.simpleClick.leftMouse(Number(p1));
+//bot.simpleClick.leftMouse(Number(p2));
+//bot.simpleClick.leftMouse(Number(p3));
+//bot.simpleClick.leftMouse(Number(p4));
+ //   setTimeout(() => { bot.chat('/2y2c') }, ms(`30s`))
+ //   setTimeout(() => { bot.clickWindow(10, 0, 0); }, ms(`5s`))});
+  //  setInterval(() => { bot.chat ('AO làng CPvP | DISCORD : https://discord.2y2cpvp.ga | Join Us Now!! | Bạn có thể thắng giải chỉ bằng kĩ năng CPVP!!!')},ms(`60s`))
+ bot.once('login', async () => {
+  console.log(bot.username + ': Joined');
+ await new Promise(resolve => bot.once("spawn", resolve));
+  console.log(bot.username + ': Spawned');
+ bot.chat("/login Huybloxgaming123");
+ console.log(bot.username + ': Logined');
+   bot.setControlState('forward', true);
+    await new Promise(resolve => bot.once("login", resolve));
+    console.log(bot.username + ': redirect successful!');
+    bot.setControlState('forward', false);
 
-// ^ Login 2y2c
+// ^ Login 6b
 const { pathfinder, Movements, goals: { GoalNear } } = require('mineflayer-pathfinder')
 const vec3 = require('vec3')
 const RANGE_GOAL = 1
