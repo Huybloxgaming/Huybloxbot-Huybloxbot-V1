@@ -2,7 +2,7 @@ const mineflayer = require('mineflayer')
 const mineflayernavigate = require('mineflayer-navigate')(mineflayer)
 const ms = require('ms')
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://killdeath:EbE0OESQOEdJL7ei@cluster0.n247o.mongodb.net/myFirstDatabase?retryWrites=true&w=majority').then(console.log('đã kết nối với mỏn go daubui của Huyblox'))
+mongoose.connect('').then(console.log('đã kết nối với mỏn go daubui của Huyblox'))
 const autoeat = require('mineflayer-auto-eat')
 const tpsPlugin = require('mineflayer-tps')(mineflayer);
 const util = require('minecraft-server-util');
